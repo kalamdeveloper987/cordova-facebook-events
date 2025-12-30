@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.kadev.facebookevents"
+        version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>MyFacebookEvents</name>
+
+    <js-module name="MyFacebookEvents" src="www/MyFacebookEvents.js">
+        <clobbers target="cordova.plugins.MyFacebookEvents" />
+    </js-module>
+
+    <platform name="android">
+
+        <framework src="com.facebook.android:facebook-android-sdk:latest.release" />
+
+        <!-- Cordova feature mapping -->
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="MyFacebookEvents">
+                <param name="android-package"
+                       value="com.kadev.facebookevents.MyFacebookEvents" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/MyFacebookEvents.java"
+                     target-dir="src/com/kadev/facebookevents" />
+
+    </platform>
+</plugin>

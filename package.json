@@ -1,0 +1,17 @@
+{
+  "name": "com.kadev.facebookevents",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "com.kadev.facebookevents",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
